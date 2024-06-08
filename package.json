@@ -1,0 +1,28 @@
+{
+  "name": "mern-blog",
+  "version": "1.0.0",
+  "description": "Mern App Blog",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alan-Ruiz/mern-blog.git"
+  },
+  "keywords": [],
+  "author": "Alán",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alan-Ruiz/mern-blog/issues"
+  },
+  "homepage": "https://github.com/Alan-Ruiz/mern-blog#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.3"
+  }
+}
