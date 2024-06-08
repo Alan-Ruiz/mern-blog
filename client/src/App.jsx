@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Article from './pages/Article.jsx';
 import ArticlesList from './pages/ArticlesList.jsx';
+import NotFound from "./pages/NotFound.jsx";
 // Components
 import Navbar from './components/Navbar.jsx';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/articles/:name" element={<Article />} />
           <Route path="/articles" element={<ArticlesList />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router> 
