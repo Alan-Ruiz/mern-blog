@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import articleContent from "./article-content.jsx";
 import Articles from "../components/Articles.jsx";
+import CommentsList from "../components/CommentsList.jsx";
 import NotFound from "./NotFound.jsx";
 import { useState, useEffect } from "react";
 
@@ -42,6 +43,7 @@ export default function Article() {
       {article.content.map((content, index) => 
         <p className="mx-auto leading-relaxed text-base mb-4" key={index}>{content}</p>
       )}
+      <CommentsList comments={articleInfo.comments}/>
       <h1 className="sm:text-2xl text-xl font-bold my-4 text-gray-900">
         Other articles
       </h1>
